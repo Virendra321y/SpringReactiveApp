@@ -30,3 +30,13 @@ server.port=9090
 spring.r2dbc.url=r2dbc:mysql://localhost:3306/etpl_tut
 spring.r2dbc.username=root
 spring.r2dbc.password=Virendra@123
+
+
+**:: When we use Spring Reactive at that time our JPA not auto create table we need to create manualy for above project this is sql query need to create table manualy in DB
+CREATE TABLE IF NOT EXISTS users (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    contact BIGINT
+);
+ 
